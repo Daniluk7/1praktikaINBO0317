@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+class Pole {
+	int pole[100][100];
+	public:
+		void fill();
+		void show();
+};
+class Animal{
+	int animal[100][100];
+	public:
+		void fill();
+		void show();
+		
+};
+int main(){
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+	Pole First;
+	Animal Second;
+
+	First.show();
+}
+void Pole::fill(){
+	for (int i=0;i <=50;i++)
+	for( int j=0;j<=50;i++)
+	{
+		pole[rand() % 101][rand() % 101]=1;
+	}
+}
+void Pole::show(){
+for (int i=0;i<=100;i++)
+for (int j=0;j<=100;j++)
+{
+	if (pole[i][j]==1)
+	cout << "1";
+	else
+	cout << "0";
+	
+}
+cout << endl;
+}
