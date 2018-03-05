@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
+using namespace std;
+int main(){
+	float a =4.8;
+	float b = -7.9;
+	float n;
+	setlocale(LC_ALL, "rus");
+	cout << "Ââåäèòå ÷èñëî N\n";
+	cin >> n;
+	cin.ignore();
+	if (n<b){
+	
+	cout << ((n+a)/(-b))+sqrt(pow(sin(a),2)-cos(n))<<endl;
+}
+	if (n=b){
+	
+	cout << pow(b,2)+tan(n*a)<<endl;
+}
+	if (n>b){
+	
+	cout << pow(b,3)+n*pow(a,2)<<endl;
+	}
+	system("pause");
+	return 0;
+}
